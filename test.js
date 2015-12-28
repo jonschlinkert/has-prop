@@ -25,4 +25,14 @@ describe('hasProp', function() {
   it('should return false when object does not have nested property', function() {
     assert(!hasProp({foo: ''}, 'foo.bar'));
   });
+
+  it('should support passing the key as an array', function() {
+    assert(hasProp({foo: {bar: ''}}, ['foo', 'bar']));
+    assert(!hasProp({foo: {bar: ''}}, ['foo', 'baz']));
+  });
+
+  it('should support passing the key as a list', function() {
+    assert(hasProp({foo: {bar: ''}}, 'foo', 'bar'));
+    assert(!hasProp({foo: {bar: ''}}, 'foo', 'baz'));
+  });
 });

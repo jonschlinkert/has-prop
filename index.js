@@ -15,9 +15,19 @@ function hasProp(obj, prop) {
   if (!obj || typeof obj !== 'object') {
     return false;
   }
-  if (!prop || typeof prop !== 'string') {
+
+  var len = arguments.length;
+  if (len < 2) {
     return false;
   }
+
+  if (arguments.length > 2) {
+    prop = [].slice.call(arguments, 1);
+  }
+  if (Array.isArray(prop)) {
+    prop = prop.join('.');
+  }
+
   if (obj.hasOwnProperty(prop)) {
     return true;
   }
