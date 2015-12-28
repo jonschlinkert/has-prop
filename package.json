@@ -26,9 +26,19 @@
     "mocha": "*",
     "should": "*"
   },
+  "keywords": [
+    "has",
+    "prop"
+  ],
   "verb": {
     "related": {
-      "list": []
+      "list": [
+        "get-value",
+        "has-value",
+        "has-values",
+        "set-value",
+        "unset-value"
+      ]
     }
   }
 }
