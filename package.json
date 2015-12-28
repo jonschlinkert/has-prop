@@ -39,6 +39,7 @@
         "set-value",
         "unset-value"
       ]
-    }
+    },
+    "layout": "default"
   }
 }
