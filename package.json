@@ -1,7 +1,7 @@
 {
   "name": "has-prop",
   "description": "Return true if an object has the given key. Dot-notation may be used to check for nested keys.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/jonschlinkert/has-prop",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/has-prop",
