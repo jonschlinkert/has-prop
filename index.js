@@ -15,6 +15,9 @@ function hasProp(obj, prop) {
   if (!obj || typeof obj !== 'object') {
     return false;
   }
+  if (!prop || typeof prop !== 'string') {
+    return false;
+  }
   if (obj.hasOwnProperty(prop)) {
     return true;
   }
